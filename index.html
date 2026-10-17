@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Visual Studio Code is a free, open source AI code editor. Your home for multi-agent development. Available on Windows, macOS, Linux, and the web.">
+  <title>Visual Studio Code - Code Editing. Redefined.</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="https://code.visualstudio.com/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+  <!-- Top Banner -->
+  <div class="top-banner" id="top-banner">
+    <a href="#">Rewatch GitHub Copilot Day. <span class="external-icon">↗</span></a>
+    <button class="banner-close" id="banner-close" aria-label="Dismiss banner">✕</button>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <a href="#" class="nav-brand">
+      <!-- VS Code Logo SVG -->
+      <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <mask id="a" maskUnits="userSpaceOnUse" x="0" y="0" width="100" height="100">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M70.912 99.317a6.223 6.223 0 0 0 4.724-.395l20.387-9.838c2.439-1.178 3.977-3.6 3.977-6.264V17.18c0-2.664-1.538-5.086-3.977-6.264L75.636 1.078a6.236 6.236 0 0 0-7.1 1.209L29.363 38.04 12.17 25.012c-1.706-1.293-4.1-1.201-5.69.218L1.217 30.24c-1.904 1.7-1.908 4.72-.008 6.424l14.85 13.336-14.85 13.335c-1.9 1.705-1.896 4.724.008 6.425l5.264 5.01c1.59 1.42 3.984 1.511 5.69.217l17.193-13.027 39.173 35.754a6.213 6.213 0 0 0 2.376 1.604ZM75.024 27.2 45.707 50l29.317 22.8V27.2Z" fill="#fff"/>
+        </mask>
+        <g mask="url(#a)">
+          <path d="M96.024 10.678 75.232.842a6.225 6.225 0 0 0-7.1 1.209L29.363 38.04 12.17 25.012c-1.706-1.293-4.1-1.201-5.69.218L1.217 30.24c-1.904 1.7-1.908 4.72-.008 6.424l14.85 13.336-14.85 13.335c-1.9 1.705-1.896 4.724.008 6.425l5.264 5.01c1.59 1.42 3.984 1.511 5.69.217l17.193-13.027 38.769 35.383a6.213 6.213 0 0 0 7.504.805L96.024 89.32A6.248 6.248 0 0 0 100 83.056V17.18c0-2.664-1.538-5.086-3.976-6.264V10.678Z" fill="#0065A9"/>
+          <g filter="url(#b)">
+            <path d="M96.024 10.678 75.232.842a6.225 6.225 0 0 0-7.1 1.209L29.363 38.04 12.17 25.012c-1.706-1.293-4.1-1.201-5.69.218L1.217 30.24c-1.904 1.7-1.908 4.72-.008 6.424l14.85 13.336-14.85 13.335c-1.9 1.705-1.896 4.724.008 6.425l5.264 5.01c1.59 1.42 3.984 1.511 5.69.217l17.193-13.027 38.769 35.383a6.213 6.213 0 0 0 7.504.805L96.024 89.32A6.248 6.248 0 0 0 100 83.056V17.18c0-2.664-1.538-5.086-3.976-6.264V10.678Z" fill="url(#c)"/>
+          </g>
+          <g filter="url(#d)">
+            <path d="M75.636 1.078a6.236 6.236 0 0 0-7.1 1.209L29.363 38.04 12.17 25.012c-1.706-1.293-4.1-1.201-5.69.218L1.217 30.24c-1.904 1.7-1.908 4.72-.008 6.424l14.85 13.336-14.85 13.335c-1.9 1.705-1.896 4.724.008 6.425l5.264 5.01c1.59 1.42 3.984 1.511 5.69.217l17.193-13.027 39.173 35.754a6.213 6.213 0 0 0 7.1 1.208l20.387-9.838c2.439-1.178 3.977-3.6 3.977-6.264V17.18c0-2.664-1.538-5.086-3.977-6.264L75.636 1.078Z" fill="url(#e)"/>
+          </g>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M70.512 99.317a6.223 6.223 0 0 0 4.724-.395l20.387-9.838c2.439-1.178 3.977-3.6 3.977-6.264V17.18c0-2.664-1.538-5.086-3.977-6.264L75.236 1.078a6.236 6.236 0 0 0-7.1 1.209L28.963 38.04 11.77 25.012c-1.706-1.293-4.1-1.201-5.69.218L.817 30.24c-1.904 1.7-1.908 4.72-.008 6.424l14.85 13.336L.81 63.335c-1.9 1.705-1.896 4.724.008 6.425l5.264 5.01c1.59 1.42 3.984 1.511 5.69.217L28.963 61.96l39.173 35.754a6.213 6.213 0 0 0 2.376 1.604ZM74.624 27.2 45.307 50l29.317 22.8V27.2Z" fill="url(#f)" opacity=".25"/>
+        </g>
+        <defs>
+          <linearGradient id="c" x1="50" y1="0" x2="50" y2="100" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#fff" stop-opacity=".1"/>
+            <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+          </linearGradient>
+          <linearGradient id="e" x1="50" y1="0" x2="50" y2="100" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#fff" stop-opacity="0"/>
+            <stop offset="1" stop-color="#fff" stop-opacity=".1"/>
+          </linearGradient>
+          <linearGradient id="f" x1="50" y1="0" x2="50" y2="100" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#fff"/>
+            <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+          </linearGradient>
+          <filter id="b" x="-8" y="-8" width="116" height="116" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="a"/>
+            <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+            <feOffset/>
+            <feGaussianBlur stdDeviation="4"/>
+            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .25 0"/>
+            <feBlend in2="a"/>
+            <feBlend in="SourceGraphic"/>
+          </filter>
+          <filter id="d" x="-8" y="-8" width="116" height="116" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="a"/>
+            <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+            <feOffset/>
+            <feGaussianBlur stdDeviation="4"/>
+            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .25 0"/>
+            <feBlend in2="a"/>
+            <feBlend in="SourceGraphic"/>
+          </filter>
+        </defs>
+      </svg>
+      Visual Studio Code
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#">Features <span class="dropdown-arrow">▾</span></a></li>
+      <li><a href="#">Docs <span class="dropdown-arrow">▾</span></a></li>
+      <li><a href="#">Release Notes</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Learn</a></li>
+      <li><a href="#">Events <span class="external-icon">↗</span></a></li>
+      <li><a href="#">Resources <span class="dropdown-arrow">▾</span></a></li>
+    </ul>
+
+    <div class="nav-right">
+      <div class="nav-search" id="nav-search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+          <path d="M11.5 7a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Zm-.82 4.74a6 6 0 1 1 1.06-1.06l3.04 3.04a.75.75 0 1 1-1.06 1.06l-3.04-3.04Z"/>
+        </svg>
+        <span class="search-text">Search</span>
+        <kbd>Ctrl+Shift+P</kbd>
+      </div>
+
+      <button class="nav-settings" aria-label="Settings">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+          <path fill-rule="evenodd" d="M7.429.863a.5.5 0 0 1 .493.002l5.5 3.111A.5.5 0 0 1 13.672 4v7.5a.5.5 0 0 1-.25.434l-5.5 3.181a.5.5 0 0 1-.501-.001l-5.5-3.18A.5.5 0 0 1 1.672 11.5V4a.5.5 0 0 1 .249-.434l5.5-3.111ZM8.172 1.873l-4.5 2.547v6.472l4.5 2.601 4.5-2.601V4.42l-4.5-2.547ZM8.172 10.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Zm0-1a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z" clip-rule="evenodd"/>
+        </svg>
+      </button>
+
+      <button class="nav-download-btn" id="nav-download">Download</button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <h1>The open source AI code editor</h1>
+      <p class="subtitle">Your home for multi-agent development</p>
+
+      <a href="#" class="download-cta" id="download-cta">
+        <!-- Windows icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M0 3.449L9.75 2.1v9.45H0m10.949-9.596L24 0v11.4H10.949M0 12.6h9.75v9.45L0 20.699M10.949 12.6H24V24l-12.9-1.801"/>
+        </svg>
+        Download for Windows
+      </a>
+
+      <div class="hero-links">
+        <a href="#">Web</a><span class="separator">,</span>
+        <a href="#">Insiders edition</a><span class="separator">, or </span>
+        <a href="#">other platforms</a>
+      </div>
+
+      <p class="hero-terms">
+        By using VS Code, you agree to its <a href="#">license</a> and <a href="#">privacy statement</a>.
+      </p>
+    </div>
+
+    <!-- Editor Screenshot -->
+    <div class="editor-preview">
+      <img src="editor-screenshot.jpg" alt="VS Code editor showing MailList.tsx with AI refactoring assistant and multi-agent sessions panel" loading="lazy">
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features" id="features">
+    <h2>Code with confidence</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <h3>IntelliSense</h3>
+        <p>Go beyond syntax highlighting and autocomplete with IntelliSense, which provides smart completions based on variable types, function definitions, and imported modules.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Multi-agent Sessions</h3>
+        <p>Run multiple AI agents side-by-side. Refactor code, wire up services, and debug — all happening concurrently within your editor.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Built-in Git</h3>
+        <p>Reviewing diffs, staging files, and making commits directly from the editor. Any Git and SCM provider is available from the integrated source control panel.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Extensions</h3>
+        <p>Install extensions to add new languages, themes, debuggers, and to connect to additional services. Extensions run in separate processes so they won't slow your editor down.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Debugging</h3>
+        <p>Debug code right from the editor. Launch or attach to your running apps with breakpoints, call stacks, and an interactive console built in.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Remote Development</h3>
+        <p>Work with code on remote machines, containers, or WSL as seamlessly as if it were local. Use SSH, Dev Containers, and GitHub Codespaces directly from VS Code.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer" id="footer">
+    <div class="footer-links">
+      <a href="#">Terms of Use</a>
+      <a href="#">Privacy</a>
+      <a href="#">License</a>
+      <a href="#">GitHub</a>
+      <a href="#">Twitter</a>
+      <a href="#">YouTube</a>
+    </div>
+    <p>&copy; Microsoft 2024. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Banner dismiss
+    document.getElementById("banner-close").addEventListener("click", function () {
+      document.getElementById("top-banner").style.display = "none";
+    });
+  </script>
+
+</body>
+</html>
